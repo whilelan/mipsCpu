@@ -1,0 +1,671 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr  5 17:47:32 2023
+# Process ID: 20176
+# Current directory: C:/Users/hejsh/Desktop/singleCPU/singleCPU.runs/synth_1
+# Command line: vivado.exe -log toplevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source toplevel.tcl
+# Log file: C:/Users/hejsh/Desktop/singleCPU/singleCPU.runs/synth_1/toplevel.vds
+# Journal file: C:/Users/hejsh/Desktop/singleCPU/singleCPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source toplevel.tcl -notrace
+Command: synth_design -top toplevel -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12220 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 394.383 ; gain = 98.309
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'toplevel' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ControlUnit.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (1#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ControlUnit.v:21]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/RegFile.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (2#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/RegFile.v:22]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/IR.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (3#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/IR.v:21]
+INFO: [Synth 8-6157] synthesizing module 'extend' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (4#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/extend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/mux2.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (5#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/mux2.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SUB' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:21]
+WARNING: [Synth 8-6014] Unused sequential element b_15_0_reg was removed.  [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:36]
+WARNING: [Synth 8-6014] Unused sequential element b_31_16_reg was removed.  [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'SUB' (6#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:21]
+INFO: [Synth 8-6157] synthesizing module 'CLA' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/CLA.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'CLA' (7#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/CLA.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (8#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-6157] synthesizing module 'and_2' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/and_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'and_2' (9#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/and_2.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'out' does not match port width (32) of module 'mux2' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:154]
+INFO: [Synth 8-6157] synthesizing module 'mux2_6' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/mux2_6.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'mux2_6' (10#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/mux2_6.v:22]
+WARNING: [Synth 8-689] width (5) of port connection 'out' does not match port width (6) of module 'mux2_6' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:161]
+INFO: [Synth 8-6157] synthesizing module 'leftShift_2' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/leftShift_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'leftShift_2' (11#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/leftShift_2.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'out' does not match port width (32) of module 'leftShift_2' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:166]
+INFO: [Synth 8-6157] synthesizing module 'pcadd_4' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/pcadd_4.v:22]
+WARNING: [Synth 8-567] referenced signal 'pc' should be on the sensitivity list [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/pcadd_4.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'pcadd_4' (12#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/pcadd_4.v:22]
+WARNING: [Synth 8-350] instance 'pc_4_inst' of module 'pcadd_4' requires 3 connections, but only 2 given [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:169]
+INFO: [Synth 8-6157] synthesizing module 'add_32' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/add_32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'add_32' (13#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/add_32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (14#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'iCache' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.runs/synth_1/.Xil/Vivado-20176-hejsh/realtime/iCache_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'iCache' (15#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.runs/synth_1/.Xil/Vivado-20176-hejsh/realtime/iCache_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addrb' does not match port width (5) of module 'iCache' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:197]
+WARNING: [Synth 8-350] instance 'iCache_inst' of module 'iCache' requires 9 connections, but only 4 given [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:195]
+INFO: [Synth 8-6157] synthesizing module 'dCache' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.runs/synth_1/.Xil/Vivado-20176-hejsh/realtime/dCache_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dCache' (16#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.runs/synth_1/.Xil/Vivado-20176-hejsh/realtime/dCache_stub.v:6]
+WARNING: [Synth 8-689] width (10) of port connection 'addra' does not match port width (5) of module 'dCache' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:205]
+WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (5) of module 'dCache' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:208]
+WARNING: [Synth 8-350] instance 'dCache_inst' of module 'dCache' requires 9 connections, but only 8 given [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:202]
+WARNING: [Synth 8-3848] Net Func in module/entity toplevel does not have driver. [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'toplevel' (17#1) [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:23]
+WARNING: [Synth 8-3331] design pcadd_4 has unconnected port clk
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[31]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[30]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[29]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[28]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[27]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[26]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[25]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[24]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[23]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[22]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[21]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[20]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[19]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[18]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[17]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[16]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[15]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[14]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[13]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[12]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[11]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[10]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[9]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[8]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[7]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[6]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[5]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[4]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[3]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[2]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[1]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[0]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_en_1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 449.965 ; gain = 153.891
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin ControlUnit_inst:Func[5] to constant 0 [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:88]
+WARNING: [Synth 8-3295] tying undriven pin ControlUnit_inst:Func[4] to constant 0 [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:88]
+WARNING: [Synth 8-3295] tying undriven pin ControlUnit_inst:Func[3] to constant 0 [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:88]
+WARNING: [Synth 8-3295] tying undriven pin ControlUnit_inst:Func[2] to constant 0 [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:88]
+WARNING: [Synth 8-3295] tying undriven pin ControlUnit_inst:Func[1] to constant 0 [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:88]
+WARNING: [Synth 8-3295] tying undriven pin ControlUnit_inst:Func[0] to constant 0 [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/toplevel.v:88]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 449.965 ; gain = 153.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 449.965 ; gain = 153.891
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/ip/dCache/dCache/dCache_in_context.xdc] for cell 'dCache_inst'
+Finished Parsing XDC File [c:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/ip/dCache/dCache/dCache_in_context.xdc] for cell 'dCache_inst'
+Parsing XDC File [c:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/ip/iCache/iCache/iCache_in_context.xdc] for cell 'iCache_inst'
+Finished Parsing XDC File [c:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/ip/iCache/iCache/iCache_in_context.xdc] for cell 'iCache_inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 773.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 773.887 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 773.887 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 773.887 ; gain = 477.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 773.887 ; gain = 477.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for dCache_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for iCache_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 773.887 ; gain = 477.812
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ALUOp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "ALUSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemRead" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "JumpOp" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'ALUResult_reg' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'zeroFlag_reg' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'equal_reg' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:77]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 773.887 ; gain = 477.812
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      4 Bit         XORs := 32    
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+Module extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module SUB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
+Module CLA 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      1 Bit        Muxes := 4     
+Module mux2_6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module pcadd_4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module add_32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[31]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[30]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[29]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[28]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[27]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[26]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[25]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[24]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[23]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[22]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[21]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[20]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[19]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[18]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[17]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[16]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[15]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[14]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[13]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[12]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[11]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[10]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[9]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[8]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[7]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[6]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[5]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[4]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[3]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[2]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[1]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_1[0]
+WARNING: [Synth 8-3331] design toplevel has unconnected port inst_en_1
+WARNING: [Synth 8-3332] Sequential element (ALU_inst/zeroFlag_reg) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (ALU_inst/equal_reg) is unused and will be removed from module toplevel.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 773.887 ; gain = 477.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives    | 
++------------+-----------------------+-----------+----------------------+---------------+
+|toplevel    | RegFile_inst/regs_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+-----------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 773.887 ; gain = 477.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 773.887 ; gain = 477.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives    | 
++------------+-----------------------+-----------+----------------------+---------------+
+|toplevel    | RegFile_inst/regs_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+-----------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 820.039 ; gain = 523.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin clka
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin ena
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin addra[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin addra[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin addra[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin addra[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin addra[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module iCache_inst has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module dCache_inst has unconnected pin wea[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 820.039 ; gain = 523.965
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[31] with 1st driver pin 'i_1_485/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[31] with 2nd driver pin 'ALU_inst/sub/result_reg[31]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[30] with 1st driver pin 'i_1_486/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[30] with 2nd driver pin 'ALU_inst/sub/result_reg[30]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[29] with 1st driver pin 'i_1_487/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[29] with 2nd driver pin 'ALU_inst/sub/result_reg[29]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[28] with 1st driver pin 'i_1_488/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[28] with 2nd driver pin 'ALU_inst/sub/result_reg[28]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[27] with 1st driver pin 'i_1_489/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[27] with 2nd driver pin 'ALU_inst/sub/result_reg[27]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[26] with 1st driver pin 'i_1_490/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[26] with 2nd driver pin 'ALU_inst/sub/result_reg[26]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[25] with 1st driver pin 'i_1_491/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[25] with 2nd driver pin 'ALU_inst/sub/result_reg[25]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[24] with 1st driver pin 'i_1_492/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[24] with 2nd driver pin 'ALU_inst/sub/result_reg[24]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[23] with 1st driver pin 'i_1_493/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[23] with 2nd driver pin 'ALU_inst/sub/result_reg[23]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[22] with 1st driver pin 'i_1_494/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[22] with 2nd driver pin 'ALU_inst/sub/result_reg[22]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[21] with 1st driver pin 'i_1_495/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[21] with 2nd driver pin 'ALU_inst/sub/result_reg[21]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[20] with 1st driver pin 'i_1_496/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[20] with 2nd driver pin 'ALU_inst/sub/result_reg[20]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[19] with 1st driver pin 'i_1_497/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[19] with 2nd driver pin 'ALU_inst/sub/result_reg[19]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[18] with 1st driver pin 'i_1_498/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[18] with 2nd driver pin 'ALU_inst/sub/result_reg[18]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[17] with 1st driver pin 'i_1_499/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[17] with 2nd driver pin 'ALU_inst/sub/result_reg[17]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[16] with 1st driver pin 'i_1_500/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[16] with 2nd driver pin 'ALU_inst/sub/result_reg[16]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[15] with 1st driver pin 'i_1_501/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[15] with 2nd driver pin 'ALU_inst/sub/result_reg[15]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[14] with 1st driver pin 'i_1_502/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[14] with 2nd driver pin 'ALU_inst/sub/result_reg[14]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[13] with 1st driver pin 'i_1_503/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[13] with 2nd driver pin 'ALU_inst/sub/result_reg[13]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[12] with 1st driver pin 'i_1_504/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[12] with 2nd driver pin 'ALU_inst/sub/result_reg[12]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[11] with 1st driver pin 'i_1_505/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[11] with 2nd driver pin 'ALU_inst/sub/result_reg[11]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[10] with 1st driver pin 'i_1_506/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[10] with 2nd driver pin 'ALU_inst/sub/result_reg[10]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[9] with 1st driver pin 'i_1_507/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[9] with 2nd driver pin 'ALU_inst/sub/result_reg[9]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[8] with 1st driver pin 'i_1_508/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[8] with 2nd driver pin 'ALU_inst/sub/result_reg[8]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[7] with 1st driver pin 'i_1_509/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[7] with 2nd driver pin 'ALU_inst/sub/result_reg[7]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[6] with 1st driver pin 'i_1_510/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[6] with 2nd driver pin 'ALU_inst/sub/result_reg[6]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[5] with 1st driver pin 'i_1_511/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[5] with 2nd driver pin 'ALU_inst/sub/result_reg[5]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[4] with 1st driver pin 'i_1_512/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[4] with 2nd driver pin 'ALU_inst/sub/result_reg[4]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[3] with 1st driver pin 'i_1_513/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[3] with 2nd driver pin 'ALU_inst/sub/result_reg[3]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[2] with 1st driver pin 'i_1_514/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[2] with 2nd driver pin 'ALU_inst/sub/result_reg[2]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[1] with 1st driver pin 'i_1_515/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[1] with 2nd driver pin 'ALU_inst/sub/result_reg[1]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[0] with 1st driver pin 'i_1_516/O' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/s[0] with 2nd driver pin 'ALU_inst/sub/result_reg[0]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/SUB.v:51]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[31] with 1st driver pin 'ALU_inst/neg_op20_carry__6/O[3]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[31] with 2nd driver pin 'ALU_inst/neg_op2_reg[31]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[30] with 1st driver pin 'ALU_inst/neg_op20_carry__6/O[2]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[30] with 2nd driver pin 'ALU_inst/neg_op2_reg[30]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[29] with 1st driver pin 'ALU_inst/neg_op20_carry__6/O[1]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[29] with 2nd driver pin 'ALU_inst/neg_op2_reg[29]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[28] with 1st driver pin 'ALU_inst/neg_op20_carry__6/O[0]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[28] with 2nd driver pin 'ALU_inst/neg_op2_reg[28]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[27] with 1st driver pin 'ALU_inst/neg_op20_carry__5/O[3]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[27] with 2nd driver pin 'ALU_inst/neg_op2_reg[27]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[26] with 1st driver pin 'ALU_inst/neg_op20_carry__5/O[2]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[26] with 2nd driver pin 'ALU_inst/neg_op2_reg[26]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[25] with 1st driver pin 'ALU_inst/neg_op20_carry__5/O[1]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[25] with 2nd driver pin 'ALU_inst/neg_op2_reg[25]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[24] with 1st driver pin 'ALU_inst/neg_op20_carry__5/O[0]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[24] with 2nd driver pin 'ALU_inst/neg_op2_reg[24]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[23] with 1st driver pin 'ALU_inst/neg_op20_carry__4/O[3]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[23] with 2nd driver pin 'ALU_inst/neg_op2_reg[23]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[22] with 1st driver pin 'ALU_inst/neg_op20_carry__4/O[2]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[22] with 2nd driver pin 'ALU_inst/neg_op2_reg[22]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[21] with 1st driver pin 'ALU_inst/neg_op20_carry__4/O[1]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[21] with 2nd driver pin 'ALU_inst/neg_op2_reg[21]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[20] with 1st driver pin 'ALU_inst/neg_op20_carry__4/O[0]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[20] with 2nd driver pin 'ALU_inst/neg_op2_reg[20]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[19] with 1st driver pin 'ALU_inst/neg_op20_carry__3/O[3]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[19] with 2nd driver pin 'ALU_inst/neg_op2_reg[19]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[18] with 1st driver pin 'ALU_inst/neg_op20_carry__3/O[2]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[18] with 2nd driver pin 'ALU_inst/neg_op2_reg[18]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[17] with 1st driver pin 'ALU_inst/neg_op20_carry__3/O[1]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[17] with 2nd driver pin 'ALU_inst/neg_op2_reg[17]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[16] with 1st driver pin 'ALU_inst/neg_op20_carry__3/O[0]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[16] with 2nd driver pin 'ALU_inst/neg_op2_reg[16]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[15] with 1st driver pin 'ALU_inst/neg_op20_carry__2/O[3]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[15] with 2nd driver pin 'ALU_inst/neg_op2_reg[15]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[14] with 1st driver pin 'ALU_inst/neg_op20_carry__2/O[2]' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ALU_inst/neg_op2[14] with 2nd driver pin 'ALU_inst/neg_op2_reg[14]/Q' [C:/Users/hejsh/Desktop/singleCPU/singleCPU.srcs/sources_1/new/ALU.v:61]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       64|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 820.039 ; gain = 523.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 820.039 ; gain = 523.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 820.039 ; gain = 523.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 820.039 ; gain = 523.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 820.039 ; gain = 523.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |iCache        |         1|
+|2     |dCache        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |dCache |     1|
+|2     |iCache |     1|
+|3     |BUFG   |     3|
+|4     |CARRY4 |    32|
+|5     |LUT1   |    35|
+|6     |LUT2   |    65|
+|7     |LUT3   |    36|
+|8     |LUT4   |    65|
+|9     |LUT5   |    66|
+|10    |LUT6   |   274|
+|11    |RAM32M |    12|
+|12    |FDRE   |   160|
+|13    |LD     |    32|
+|14    |IBUF   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+--------+------+
+|      |Instance       |Module  |Cells |
++------+---------------+--------+------+
+|1     |top            |        |   846|
+|2     |  ALU_inst     |ALU     |   363|
+|3     |    cla_add_32 |CLA     |    41|
+|4     |    sub        |SUB     |   211|
+|5     |  RegFile_inst |RegFile |   413|
++------+---------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 820.039 ; gain = 523.965
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 169 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 820.039 ; gain = 200.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 820.039 ; gain = 523.965
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 76 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  LD => LDCE: 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 91 Warnings, 141 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 820.039 ; gain = 535.492
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.039 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hejsh/Desktop/singleCPU/singleCPU.runs/synth_1/toplevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file toplevel_utilization_synth.rpt -pb toplevel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  5 17:47:54 2023...
