@@ -1,0 +1,145 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 22148
+License: Customer
+
+Current time: 	Mon Apr 03 11:51:25 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2880x1800
+Screen resolution (DPI): 192
+Available screens: 1
+Available disk space: 73 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=24
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/software/Vivado/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/software/Vivado/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	hejsh
+User home directory: C:/Users/hejsh
+User working directory: C:/Users/hejsh/Desktop/singleCPU
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/software/Vivado/Vivado
+HDI_APPROOT: D:/software/Vivado/Vivado/2018.3
+RDI_DATADIR: D:/software/Vivado/Vivado/2018.3/data
+RDI_BINDIR: D:/software/Vivado/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/hejsh/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/hejsh/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/hejsh/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/software/Vivado/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/hejsh/Desktop/singleCPU/vivado.log
+Vivado journal file location: 	C:/Users/hejsh/Desktop/singleCPU/vivado.jou
+Engine tmp dir: 	C:/Users/hejsh/Desktop/singleCPU/.Xil/Vivado-22148-hejsh
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/software/Vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/software/Vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/software/Vivado/Vivado/2018.3
+XILINX_SDK: D:/software/Vivado/SDK/2018.3
+XILINX_VIVADO: D:/software/Vivado/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/software/Vivado/Vivado/2018.3
+
+
+GUI allocated memory:	155 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 626 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\hejsh\Desktop\singleCPU\singleCPU.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project C:/Users/hejsh/Desktop/singleCPU/singleCPU.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 648 MB. GUI used memory: 63 MB. Current time: 4/3/23, 11:51:27 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 113 MB (+116149kb) [00:00:15]
+// [Engine Memory]: 658 MB (+538708kb) [00:00:15]
+// [GUI Memory]: 121 MB (+1804kb) [00:00:18]
+// WARNING: HEventQueue.dispatchEvent() is taking  4192 ms.
+// Tcl Message: open_project C:/Users/hejsh/Desktop/singleCPU/singleCPU.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/Vivado/Vivado/2018.3/data/ip'. 
+// [Engine Memory]: 715 MB (+25221kb) [00:00:19]
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 747.383 ; gain = 110.746 
+// Project name: singleCPU; location: C:/Users/hejsh/Desktop/singleCPU; part: xc7k70tfbv676-1
+dismissDialog("Open Project"); // bx (cp)
+// [GUI Memory]: 128 MB (+978kb) [00:00:21]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 756 MB (+5505kb) [00:00:25]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel (toplevel.v)]", 1); // B (D, cp)
+// PAPropertyPanels.initPanels (ALU.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel (toplevel.v), ALU_inst : ALU (ALU.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, toplevel (toplevel.v), ALU_inst : ALU (ALU.v), sub : SUB (SUB.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("ALU.v", 176, 235); // cl (w, cp)
+selectCodeEditor("ALU.v", 182, 235); // cl (w, cp)
+selectCodeEditor("ALU.v", 182, 235, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ALU.v", 191, 231); // cl (w, cp)
+selectCodeEditor("ALU.v", 191, 231, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ALU.v", 192, 193); // cl (w, cp)
+selectCodeEditor("ALU.v", 192, 193, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 123 seconds
+selectCodeEditor("ALU.v", 346, 220); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  2602872 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 69 MB. Current time: 4/3/23, 12:54:02 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  75144 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3220370 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 2:13:20 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 2:43:23 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 3:13:26 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 3:43:29 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 4:13:32 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 4:43:34 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 5:13:37 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 5:43:40 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 6:13:43 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 6:43:46 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 7:13:49 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 7:43:52 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 8:13:54 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 8:43:57 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 9:14:00 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 9:44:03 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 10:14:05 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 756 MB. GUI used memory: 63 MB. Current time: 4/3/23, 10:44:08 PM CST
